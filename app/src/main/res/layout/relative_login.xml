@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/sign_in"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:contentDescription="@string/img_logo"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/logotext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:text="@string/login_text"
+            android:layout_marginBottom="50dp"
+            android:layout_below="@id/imgLogo"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvLogin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:drawableStart="@drawable/ic_user"
+            android:hint="@string/username"
+            android:autofillHints="@string/username"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etUser"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:drawableStart="@drawable/ic_pass"
+            android:hint="@string/pass"
+            android:autofillHints="@string/pass"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btnLogin"
+            android:layout_below="@id/etPass"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvCreate"
+            android:layout_below="@id/btnLogin"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:text="@string/create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>
